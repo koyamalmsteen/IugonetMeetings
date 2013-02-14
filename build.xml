@@ -30,14 +30,40 @@
 
   <target name="yum">
     <exec executable="yum">
-      <arg line="-y install ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
+      <arg line="-y install gcc ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
     </exec>
   </target>
 
   <target name="sox">
+    <get src="${src_sox}" dest="${dst_sox}" usetimestamp="yes"/>
+    <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
+    <exec executable="tar" dir="${tmp}/">
+      <arg value="xvjf"/>
+      <arg value="${dst_sox}"/>
+    </exec>
+    <exec executable="./configure" dir="${tmp}/${sox_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${sox_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${sox_prefix}">
+      <arg value="install"/>
+    </exec>
   </target>
   
   <target name="speex">
+    <get src="${src_speex}" dest="${dst_speex}" usetimestamp="yes"/>
+    <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
+    <exec executable="tar" dir="${tmp}/">
+      <arg value="xvzf"/>
+      <arg value="${dst_speex}"/>
+    </exec>
+    <exec executable="./configure" dir="${tmp}/${speex_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${speex_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${speex_prefix}">
+      <arg value="install"/>
+    </exec>
   </target>
 
   <target name="ffmpeg">
