@@ -47,7 +47,12 @@
   </target>
 
   <target name="openoffice">
-    <get src="${src_openoffice} dst="${dst_openoffice}" usetimestamp="yes"/>
+    <get src="${src_openoffice}" dest="${dst_openoffice}" usetimestamp="yes"/>
+    <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
+    <exec executable="tar" dir="${tmp}/">
+      <arg value="xvjf"/>
+      <arg value="${dst_openoffice}"/>
+    </exec>
   </target>
 
   <target name="postgresql">
