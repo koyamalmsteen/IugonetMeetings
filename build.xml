@@ -9,7 +9,7 @@
     </classpath>
   </taskdef>
 
-  <target name="all" depends="initial_message, clean, init, yum, sox, speex, ffmpeg, swftools, openoffice, postgresql, final_message" description="All"/>
+  <target name="all" depends="initial_message, clean, init, yum, lame, sox, speex, ffmpeg, swftools, openoffice, postgresql, final_message" description="All"/>
   
   <target name="initial_message">
   </target>
@@ -31,6 +31,22 @@
   <target name="yum">
     <exec executable="yum">
       <arg line="-y install gcc ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
+    </exec>
+  </target>
+
+  <target name="lame">
+    <get src="${src_lame}" dest="${dst_lame}" usetimestamp="yes"/>
+    <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
+    <exec executable="tar" dir="${tmp}/">
+      <arg value="xvzf"/>
+      <arg value="${dst_lame}"/>
+    </exec>
+    <exec executable="./configure" dir="${tmp}/${lame_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${lame_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${lame_prefix}">
+      <arg value="install"/>
     </exec>
   </target>
 
