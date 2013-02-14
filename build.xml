@@ -9,7 +9,13 @@
     </classpath>
   </taskdef>
 
-  <target name="all" depends="initial_message, clean, init, expat, icu, darts, chasen, ipadic, stmd, getassoc, gss3, itb, iptables, gem, demo, final_message" description="All"/>
+  <target name="all" depends="initial_message, clean, init, yum, final_message" description="All"/>
+  
+  <target name="initial_message">
+  </target>
+
+  <target name="init">
+  </target>
 
   <target name="clean" description="clean">
     <delete dir="${src}"/>
@@ -22,10 +28,13 @@
     </exec>
   </target>
 
-  <target name="clean_itb" description="clean itb and temporal files">
-    <delete file="${tmp}/*.tmp1"/>
-    <delete file="${tmp}/*.tmp2"/>
-    <delete file="${tmp}/*.itb"/>
+  <target name="yum">
+    <exec executable="yum">
+      <arg line="-y install ImageMagick ghostscript"/>
+    </exec>
+  </target>
+
+  <target name="final_message">
   </target>
 
 </project>
