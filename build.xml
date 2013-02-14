@@ -30,7 +30,7 @@
 
   <target name="yum">
     <exec executable="yum">
-      <arg line="-y install ImageMagick ghostscript"/>
+      <arg line="-y install ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
     </exec>
   </target>
 
@@ -44,6 +44,12 @@
   </target>
 
   <target name="swftools">
+    <get src="${src_swftools}" dest="${dst_swftools}" usetimestamp="yes"/>
+    <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
+    <exec executable="tar" dir="${tmp}/">
+      <arg value="xvzf"/>
+      <arg value="${dst_swftools}"/>
+    </exec>
   </target>
 
   <target name="openoffice">
