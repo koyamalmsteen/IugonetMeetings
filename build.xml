@@ -53,6 +53,13 @@
       <arg value="xvzf"/>
       <arg value="${dst_openoffice}"/>
     </exec>
+    <exec executable="bash" outputproperty="ooo_dir">
+      <arg value="-c"/>
+      <arg value="ls ${tmp} | grep OOO"/>
+    </exec>
+    <exec executable="yum" dir="${tmp}/${ooo_dir}/RPMS">
+      <arg line="-y localinstall --nogpgcheck *.rpm"/>
+    </exec>
 <!--
     <exec executable="yum" dir="">
     </exec>
