@@ -1,0 +1,957 @@
+
+initial_message:
+
+clean:
+     [exec] httpd を停止中: [失敗]
+
+init:
+
+yum:
+     [exec] Loaded plugins: refresh-packagekit, security
+     [exec] Existing lock /var/run/yum.pid: another copy is running as pid 15702.
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:15 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:17 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:19 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:21 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:23 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:25 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:27 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:29 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:31 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:33 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:35 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:37 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:39 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:41 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:43 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:45 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:47 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:49 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:51 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:53 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:55 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:57 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:26:59 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:01 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:03 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:05 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:07 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:09 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:11 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:13 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:15 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:17 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:19 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:21 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:23 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:25 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:27 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:29 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:31 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:33 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:35 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:37 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:39 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:41 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:43 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:45 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:47 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:49 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:51 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:54 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:56 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:27:58 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:00 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:02 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:04 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:06 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:08 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:10 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:12 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:14 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:16 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:18 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:20 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:22 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:24 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:26 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:28 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:30 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:32 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:34 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:36 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:38 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:40 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:42 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:44 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:46 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:48 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:50 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:52 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:54 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:56 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:28:58 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:00 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:02 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:04 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:06 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:08 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:10 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:12 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:14 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:16 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:18 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:20 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:22 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:24 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:26 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:28 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:30 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:32 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:34 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:36 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:38 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:40 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:42 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:44 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:46 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:48 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:50 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:52 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:54 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:56 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:29:58 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:00 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:02 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:04 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:06 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:08 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:10 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:12 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:14 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:16 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:18 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:20 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:22 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:24 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:26 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:28 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:30 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:32 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:34 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:36 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:38 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:40 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:42 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:44 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:46 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:48 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:51 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:53 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:55 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:57 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:30:59 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:01 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:03 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:05 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:07 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:09 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:11 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:13 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:15 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:17 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:19 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:21 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:23 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:25 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:27 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:29 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:31 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:33 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:35 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:37 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:39 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:41 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:43 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:45 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:47 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:49 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:51 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:53 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:55 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:57 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:31:59 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:01 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:03 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:05 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:07 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:09 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:11 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:13 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:15 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:17 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:19 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:21 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:23 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:25 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:27 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:29 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] Another app is currently holding the yum lock; waiting for it to exit...
+     [exec]   The other application is: PackageKit
+     [exec]     Memory :  33 M RSS ( 47 MB VSZ)
+     [exec]     Started: Fri Feb 15 00:58:04 2013 - 6:32:31 ago
+     [exec]     State  : Sleeping, pid: 15702
+     [exec] 
+     [exec] 
+     [exec] Exiting on user cancel.
+     [exec] Result: 143
+
+lame:
