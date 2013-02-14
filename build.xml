@@ -41,6 +41,19 @@
   </target>
 
   <target name="ffmpeg">
+    <get src="${src_ffmpeg}" dest="${dst_ffmpeg}" usetimestamp="yes"/>
+    <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
+    <exec executable="tar" dir="${tmp}/">
+      <arg value="xvjf"/>
+      <arg value="${dst_ffmpeg}"/>
+    </exec>
+    <exec executable="./configure" dir="${tmp}/ffmpeg">
+    </exec>
+    <exec executable="make" dir="${tmp}/ffmpeg">
+    </exec>
+    <exec executable="make" dir="${tmp}/ffmpeg">
+      <arg value="install"/>
+    </exec>
   </target>
 
   <target name="swftools">
