@@ -9,7 +9,7 @@
     </classpath>
   </taskdef>
 
-  <target name="all" depends="initial_message, clean, init, yum, final_message" description="All"/>
+  <target name="all" depends="initial_message, clean, init, yum, sox, speex, ffmpeg, swftools, openoffice, postgresql, final_message" description="All"/>
   
   <target name="initial_message">
   </target>
@@ -32,6 +32,25 @@
     <exec executable="yum">
       <arg line="-y install ImageMagick ghostscript"/>
     </exec>
+  </target>
+
+  <target name="sox">
+  </target>
+  
+  <target name="speex">
+  </target>
+
+  <target name="ffmpeg">
+  </target>
+
+  <target name="swftools">
+  </target>
+
+  <target name="openoffice">
+    <get src="http://download.services.openoffice.org/files/localized/ja/3.3.0/OOo_3.3.0_Linux_x86_install-rpm_ja.tar.gz" dst="${tmp}"/>
+  </target>
+
+  <target name="postgresql">
   </target>
 
   <target name="final_message">
