@@ -135,6 +135,105 @@
   </target>
 
   <target name="postgresql" description="Install PostgreSQL">
+    <echo message='### for PostgreSQL&#10;' file="${env_set_file}" append="yes"/>
+    <echo message='export POSTGRES_HOME=${postgresql_home}&#10;' file="${env_set_file}" append="yes"/>
+    <echo message='export PGLILB=${postgresql_home}/lib&#10;' file="${env_set_file}" append="yes"/>
+    <echo message='export PGDATA=${pgdata}&#10;' file="${env_set_file}" append="yes"/>
+    <echo message='export MANPATH=${manpath}:${postgresql_home}/man&#10;' file="${env_set_file}" append="yes"/>
+    <echo message='export PATH=${postgresql_home}/bin:${PATH}&#10;' file="${env_set_file}" append="yes"/>
+    <echo message='export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${pglib}&#10;' file="${env_set_file}" append="yes"/>
+    <get src="${src_postgresql}" dest="${dst_postgresql}"/>
+    <exec executable="sudo">
+      <arg value="/usr/sbin/useradd"/>
+      <arg value="-c"/>
+      <arg value="Server"/>
+      <arg value="-d"/>
+      <arg value="${postgresql_home}"/>
+      <arg value="pgsql"/>
+    </exec>
+    <exec executable="sudo">
+      <arg value="rm"/>
+      <arg value="-rf"/>
+      <arg value="${postgresql_home}"/>
+    </exec>
+    <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
+    <exec executable="tar">
+      <arg value="xvjf"/>
+      <arg value="${dst_postgresql}"/>
+      <arg value="--directory"/>
+      <arg value="${tmp}"/>
+    </exec>
+    <exec executable="sudo">
+      <arg value="chown"/>
+      <arg value="-R"/>
+      <arg value="pgsql:pgsql"/>
+      <arg value="${tmp}/${postgresql_prefix}"/>
+    </exec>
+    <exec executable="sudo">
+      <arg value="mkdir"/>
+      <arg value="${postgresql_home}-${postgresql_version}"/>
+    </exec>
+    <exec executable="sudo">
+      <arg value="chmod"/>
+      <arg value="755"/>
+      <arg value="${postgresql_home}-${postgresql_version}"/>
+    </exec>
+    <exec executable="sudo">
+      <arg value="chown"/>
+      <arg value="-R"/>
+      <arg value="pgsql:pgsql"/>
+      <arg value="${postgresql_home}-${postgresql_version}"/>
+    </exec>
+    <exec executable="ln">
+      <arg value="-s"/>
+      <arg value="${postgresql_home}-${postgresql_version}"/>
+      <arg value="${postgresql_home}"/>
+    </exec>
+    <exec executable="./configure" dir="${tmp}/${postgresql_prefix}">
+      <arg line="--prefix=${postgresql_home} --with-pgport=${postgresql_port}"/>
+    </exec>
+    <exec executable="sudo" dir="${tmp}/${postgresql_prefix}">
+      <arg value="-u"/>
+      <arg value="pgsql"/>
+      <arg value="make"/>
+    </exec>
+    <exec executable="sudo" dir="${tmp}/${postgresql_prefix}">
+      <arg value="-u"/>
+      <arg value="pgsql"/>
+      <arg value="make"/>
+      <arg value="install"/>
+    </exec>
+    <mkdir dir="${pgdata}-${postgresql_version}"/>
+    <exec executable="chmod">
+      <arg value="700"/>
+      <arg value="${pgdata}-${postgresql_version}"/>
+    </exec>
+    <exec executable="chown">
+      <arg value="-R"/>
+      <arg value="pgsql:pgsql"/>
+      <arg value="${pgdata}-${postgresql_version}"/>
+    </exec>
+    <exec executable="ln">
+      <arg value="-s"/>
+      <arg value="${pgdata}-${postgresql_version}"/>
+      <arg value="${pgdata}"/>
+    </exec>
+    <exec executable="sudo">
+      <arg value="-u"/>
+      <arg value="pgsql"/>
+      <arg value="-i"/>
+      <arg value="${postgresql_home}/bin/initdb --no-locale --encoding=UTF-8"/>
+     </exec>
+
+    <echo message='### for Log&#10;' file="${pgdata}/postgresql.conf" append="yes"/>
+    <echo message="log_destination = 'syslog'&#10;" file="${pgdata}/postgresql.conf" append="yes"/>
+    <echo message='### for encryption&#10;' file="${pgdata}/pg_hba.conf" append="yes"/>
+    <echo message='host dspace dspace 127.0.0.1/32 md5&#10;' file="${pgdata}/pg_hba.conf" append="yes"/>
+    <exec executable="chmod">
+      <arg value="-R"/>
+      <arg value="o-rwx"/>
+      <arg value="${pgdata}-${postgresql_version}"/>
+    </exec>
   </target>
 
   <target name="final_message" description="Show final message.">
