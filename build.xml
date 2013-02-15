@@ -105,6 +105,13 @@
       <arg value="xvzf"/>
       <arg value="${dst_swftools}"/>
     </exec>
+    <exec executable="./configure" dir="${tmp}/${swftools_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${swftools_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${swftools_prefix}">
+      <arg value="install"/>
+    </exec>
   </target>
 
   <target name="openoffice" description="Install OpenOffice.">
