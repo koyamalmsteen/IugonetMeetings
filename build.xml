@@ -31,7 +31,7 @@
 
   <target name="yum" description="Install packages by using yum">
     <exec executable="yum">
-      <arg line="-y install gcc bison flex readline-devel zlib-devel ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
+      <arg line="-y install gcc gcc-c++ bison flex readline-devel zlib-devel ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
     </exec>
   </target>
 
