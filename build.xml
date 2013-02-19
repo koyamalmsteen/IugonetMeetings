@@ -31,7 +31,7 @@
 
   <target name="yum" description="Install packages by using yum">
     <exec executable="yum">
-      <arg line="-y install gcc gcc-c++ bison flex readline-devel zlib-devel ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel alsa-lib-devel pulseaudio-libs-devel libsndfile-devel gsm-devel flac-devel liborbis wavpack-devel libpng libpng-devel ImageMagick-devel libtool-ltdl-devel gtk+-1 gtk+-devel-1 nasm ElectricFence xmlto SDL-devel opencv opencv-devel openssl-devel gsm-devel"/>
+      <arg line="-y install gcc gcc-c++ bison flex readline-devel zlib-devel ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel alsa-lib-devel pulseaudio-libs-devel libsndfile-devel gsm-devel flac-devel liborbis wavpack-devel libpng libpng-devel ImageMagick-devel libtool-ltdl-devel gtk+-1 gtk+-devel-1 nasm ElectricFence xmlto SDL-devel opencv opencv-devel openssl-devel gsm-devel libid3tag libid3tag-devel"/>
     </exec>
   </target>
 
