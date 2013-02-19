@@ -37,11 +37,10 @@
 
   <target name="yasm" description="Install yasm.">
     <get src="${src_yasm}" dest="${dst_yasm}" usetimestamp="yes"/>
-<!--
-    <exec executable="">
-
+    <exec executable="tar" dir="${tmp}/">
+      <arg value="xvzf"/>
+      <arg value="${dst_yasm}"/>
     </exec>
--->
   </target>
 
   <target name="lame" description="Install lame mp3 encoder.">
