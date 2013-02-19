@@ -41,11 +41,11 @@
       <arg value="xvzf"/>
       <arg value="${dst_yasm}"/>
     </exec>
-    <exec executable="./configure" dir="${tmp}/${lame_yasm}">
+    <exec executable="./configure" dir="${tmp}/${yasm_prefix}">
     </exec>
-    <exec executable="make" dir="${tmp}/${lame_yasm}">
+    <exec executable="make" dir="${tmp}/${yasm_prefix}">
     </exec>
-    <exec executable="make" dir="${tmp}/${lame_yasm}">
+    <exec executable="make" dir="${tmp}/${yasm_prefix}">
       <arg value="install"/>
     </exec>
   </target>
