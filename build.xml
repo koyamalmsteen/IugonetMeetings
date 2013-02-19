@@ -41,6 +41,13 @@
       <arg value="xvzf"/>
       <arg value="${dst_yasm}"/>
     </exec>
+    <exec executable="./configure" dir="${tmp}/${lame_yasm}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${lame_yasm}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${lame_yasm}">
+      <arg value="install"/>
+    </exec>
   </target>
 
   <target name="lame" description="Install lame mp3 encoder.">
