@@ -9,7 +9,7 @@
     </classpath>
   </taskdef>
 
-  <target name="all" depends="initial_message, clean, init, yum, lame, sox, speex, ffmpeg, swftools, openoffice, postgresql, final_message" description="Install All"/>
+  <target name="all" depends="initial_message, clean, init, yum, yasm, lame, sox, speex, ffmpeg, swftools, openoffice, postgresql, final_message" description="Install All"/>
   
   <target name="initial_message">
     <echo message="###&#x0A;###&#x0A;This installation process takes 25 minutes at least.&#x0A;###&#x0A;###&#x0A;"/>
@@ -31,7 +31,7 @@
 
   <target name="yum" description="Install packages by using yum">
     <exec executable="yum">
-      <arg line="-y install gcc gcc-c++ yasm bison flex readline-devel zlib-devel ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
+      <arg line="-y install gcc gcc-c++ bison flex readline-devel zlib-devel ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
     </exec>
   </target>
 
@@ -106,7 +106,6 @@
       <arg value="${dst_ffmpeg}"/>
     </exec>
     <exec executable="./configure" dir="${tmp}/ffmpeg">
-      <arg line="--disable-yasm"/>
     </exec>
     <exec executable="make" dir="${tmp}/ffmpeg">
     </exec>
@@ -145,10 +144,6 @@
     <exec executable="yum" dir="${tmp}/${ooo_dir}/RPMS">
       <arg line="-y localinstall --nogpgcheck *.rpm"/>
     </exec>
-<!--
-    <exec executable="yum" dir="">
-    </exec>
--->
   </target>
 
   <target name="postgresql" description="Install PostgreSQL">
