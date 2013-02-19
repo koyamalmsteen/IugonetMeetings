@@ -31,8 +31,17 @@
 
   <target name="yum" description="Install packages by using yum">
     <exec executable="yum">
-      <arg line="-y install gcc gcc-c++ bison flex readline-devel zlib-devel ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
+      <arg line="-y install gcc gcc-c++ yasm bison flex readline-devel zlib-devel ImageMagick ghostscript libjpeg-devel fontconfig-devel giflib-devel"/>
     </exec>
+  </target>
+
+  <target name="yasm" description="Install yasm.">
+    <get src="${src_yasm}" dest="${dst_yasm}" usetimestamp="yes"/>
+<!--
+    <exec executable="">
+
+    </exec>
+-->
   </target>
 
   <target name="lame" description="Install lame mp3 encoder.">
@@ -91,6 +100,7 @@
       <arg value="${dst_ffmpeg}"/>
     </exec>
     <exec executable="./configure" dir="${tmp}/ffmpeg">
+      <arg line="--disable-yasm"/>
     </exec>
     <exec executable="make" dir="${tmp}/ffmpeg">
     </exec>
