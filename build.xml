@@ -291,6 +291,17 @@
     </exec>
     -->
     <mv file="${tmp}/red5" todir="/usr/local/openmeetings"/>
+    <mv file="etc" todir="/"/>
+    <chmod file="/etc/rc.d/init.d/openmeetings" perm="+x"/>
+    <exec executable="chkconfig">
+      <arg line="--add openmeetings"/>
+    </exec>
+    <exec executable="chkconfig">
+      <arg line="openmeetings on"/>
+    </exec>
+    <exec executable="service">
+      <arg line="openmeetings start"/>
+    </exec>
   </target>
 
   <target name="final_message" description="Show final message.">
