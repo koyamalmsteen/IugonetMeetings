@@ -168,6 +168,9 @@
     <exec executable="chkconfig">
       <arg line="soffice on"/>
     </exec>
+    <exec executable="service">
+      <arg line="soffice start"/>
+    </exec>
   </target>
 
   <target name="postgresql" description="Install PostgreSQL">
