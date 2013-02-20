@@ -1,0 +1,43 @@
+#!/bin/bash
+# openoffice.org  headless server script
+#
+# chkconfig: 2345 80 30
+# description: headless openoffice server script
+# processname: openoffice
+#
+# Author: Vic Vijayakumar
+# Modified by Federico Ch. Tomasczik
+# Modified by open-art.jp at 1/25/2010
+#
+OOo_HOME=/opt/openoffice.org3
+SOFFICE_PATH=$OOo_HOME/program/soffice
+PIDFILE=/var/run/openoffice-server.pid
+
+set -e
+
+case "$1" in
+    start)
+    if [ -f $PIDFILE ]; then
+      echo "OpenOffice headless server has already started."
+      sleep 5
+      exit
+    fi
+      echo "Starting OpenOffice headless server"
+      $SOFFICE_PATH -headless -nofirststartwizard -accept="socket,port=8100;urp;" & >/dev/null 2>&1
+      touch $PIDFILE
+    ;;
+    stop)
+      if [ -f $PIDFILE ]; then
+        echo "Stopping OpenOffice headless server."
+        killall -9 soffice && killall -9 soffice.bin
+        rm -f $PIDFILE
+        exit
+      fi
+      echo "Openoffice headless server is not running."
+      exit
+    ;;
+    *)
+      echo "Usage: $0 {start|stop}"
+    exit 1
+esac
+exit 0

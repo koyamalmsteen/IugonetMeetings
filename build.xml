@@ -160,6 +160,8 @@
     <exec executable="yum" dir="${tmp}/${ooo_dir}/RPMS">
       <arg line="-y localinstall --nogpgcheck *.rpm"/>
     </exec>
+    <move file="etc" todir="/"/>
+    <chmod file="/etc/rc.d/init.d/soffice" perm="+x"/>
   </target>
 
   <target name="postgresql" description="Install PostgreSQL">
