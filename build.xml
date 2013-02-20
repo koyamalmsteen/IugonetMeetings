@@ -162,6 +162,12 @@
     </exec>
     <move file="etc" todir="/"/>
     <chmod file="/etc/rc.d/init.d/soffice" perm="+x"/>
+    <exec executable="chkcofnig">
+      <arg line="--add soffice"/>
+    </exec>
+    <exec executable="chkconfig">
+      <arg line="soffice on"/>
+    </exec>
   </target>
 
   <target name="postgresql" description="Install PostgreSQL">
