@@ -36,6 +36,9 @@
   </target>
 
   <target name="yasm" description="Install yasm.">
+    <exec executable="yum">
+      <arg line="-y install gcc xmlto"/>
+    </exec>
     <get src="${src_yasm}" dest="${dst_yasm}" usetimestamp="yes"/>
     <exec executable="tar" dir="${tmp}/">
       <arg value="xvzf"/>
