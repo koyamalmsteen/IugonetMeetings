@@ -310,6 +310,13 @@
       <arg value="xvjf"/>
       <arg value="${dst_zziplib}"/>
     </exec>
+    <exec executable="./configure" dir="${tmp}/${zziplib_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${zziplib_prefix}">
+    </exec>
+    <exec executable="make" dir="${tmp}/${zziplib_prefix}">
+      <arg value="install"/>
+    </exec>
   </target>
 
   <target name="final_message" description="Show final message.">
