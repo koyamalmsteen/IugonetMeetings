@@ -306,7 +306,7 @@
 
   <target name="zziplib">
     <exec executable="yum">
-      <arg line="-y install gcc"/>
+      <arg line="-y install gcc xmlto zlib-devel"/>
     </exec>
     <get src="${src_zziplib}" dest="${dst_zziplib}" usetimestamp="yes"/>
     <exec executable="tar" dir="${tmp}/">
