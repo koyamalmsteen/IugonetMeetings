@@ -70,6 +70,9 @@
   </target>
 
   <target name="twolame" description="Install twolame mp2 encoder.">
+    <exec executable="yum">
+      <arg line="-y install gcc"/>
+    </exec>
     <get src="${src_twolame}" dest="${dst_twolame}" usetimestamp="yes"/>
     <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
     <exec executable="tar" dir="${tmp}/">
@@ -307,7 +310,7 @@
     </exec>
   </target>
 
-  <target name="zziplib">
+  <target name="zziplib" description="Install zziplib">
     <exec executable="yum">
       <arg line="-y install gcc xmlto zlib-devel"/>
     </exec>
