@@ -121,6 +121,9 @@
   </target>
 
   <target name="ffmpeg" description="Install ffmpeg:convert and stream audio and video.">
+    <exec executable="yum">
+      <arg line="-y install gcc"/>
+    </exec>
     <get src="${src_ffmpeg}" dest="${dst_ffmpeg}" usetimestamp="yes"/>
     <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
     <exec executable="tar" dir="${tmp}/">
