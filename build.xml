@@ -320,8 +320,8 @@
       <arg value="install"/>
     </exec>
     -->
-    <mv file="${tmp}/red5" todir="/usr/local/openmeetings"/>
-    <mv file="etc" todir="/"/>
+    <move file="${tmp}/red5" todir="/usr/local/openmeetings"/>
+    <move file="etc" todir="/"/>
     <chmod file="/etc/rc.d/init.d/openmeetings" perm="+x"/>
     <exec executable="chkconfig">
       <arg line="--add openmeetings"/>
