@@ -9,24 +9,42 @@
     </classpath>
   </taskdef>
 
-  <target name="all" depends="initial_message, clean, init, yum, yasm, lame, twolame, speex, ffmpeg, sox, swftools, openoffice, postgresql, zziplib, openmeetings, final_message" description="Install all"/>
-  
+  <target name="all" depends="initial_message, clean, init, yum, yasm, lame, twolame, speex, ffmpeg, sox, swftools, postgresql, zziplib, openmeetings, final_message" description="Install all"/>
+
   <target name="initial_message">
     <echo message="###&#x0A;###&#x0A;This installation process takes 25 minutes at least.&#x0A;###&#x0A;###&#x0A;"/>
   </target>
 
   <target name="init">
+    <antcall target="httpd_start"/>
   </target>
 
   <target name="clean" description="Clean everything">
     <delete dir="${src}"/>
     <delete dir="/opt"/>
+    <exec executable="/etc/init.d/httpd" outputproperty="httpd">
+      <arg value="status"/>
+    </exec>
+    <condition property="httpd.status" value="true">
+      <equals arg1="${httpd}" arg2="httpd is stopped" />
+    </condition>
+    <!-- -->
+    <antcall target="httpd_stop"/>
+
     <exec executable="/etc/init.d/httpd">
       <arg line="stop"/>
     </exec>
     <exec executable="chkconfig">
       <arg line="httpd off"/>
     </exec>
+  </target>
+
+  <target name="httpd_start" description="Start httpd" if="httpd.status">
+    <echo message="HOHOHOHOHO"/>
+  </target>
+
+  <target name="httpd_stop" description="Stop httpd" unless="httpd.status">
+    <echo message="JOJOJO"/>
   </target>
 
   <target name="yum" description="Install packages by using yum">
@@ -155,9 +173,11 @@
     </exec>
   </target>
 
+<!-- for default of Scientific Linux 6.3, LibreOffice was installed. 
+  You can use LibreOffice instead of OpenOffice
   <target name="openoffice" description="Install OpenOffice.">
     <get src="${src_openoffice}" dest="${dst_openoffice}" usetimestamp="yes"/>
-    <!-- To stay away to use untar task because untar task for ant 1.7.1 is buggy. -->
+    <!- - To stay away to use untar task because untar task for ant 1.7.1 is buggy. - ->
     <exec executable="tar" dir="${tmp}/">
       <arg value="xvzf"/>
       <arg value="${dst_openoffice}"/>
@@ -167,12 +187,12 @@
       <arg value="ls ${tmp} | grep OOO"/>
     </exec>
     <exec executable="yum" dir="${tmp}/${ooo_dir}/RPMS">
-      <arg line="-y localinstall --nogpgcheck *.rpm"/>
+      <arg line="-y localinstall - -nogpgcheck *.rpm"/>
     </exec>
     <move file="etc" todir="/"/>
     <chmod file="/etc/rc.d/init.d/soffice" perm="+x"/>
     <exec executable="chkcofnig">
-      <arg line="--add soffice"/>
+      <arg line="- -add soffice"/>
     </exec>
     <exec executable="chkconfig">
       <arg line="soffice on"/>
@@ -181,6 +201,7 @@
       <arg line="soffice start"/>
     </exec>
   </target>
+-->
 
   <target name="postgresql" description="Install PostgreSQL">
     <echo message='### for PostgreSQL&#10;' file="${env_set_file}" append="yes"/>

@@ -1,8 +1,0 @@
-/var/log/openmeetings.log {
-    missingok
-    notifempty
-    sharedscripts
-    postrotate
-        /etc/rc.d/init.d/openmeetings restart >/dev/null 2>&1
-    endscript
-}
