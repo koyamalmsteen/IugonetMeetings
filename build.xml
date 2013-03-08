@@ -207,6 +207,20 @@
     <exec executable="yum">
       <arg line="-y install mysql"/>
     </exec>
+    <copy file="etc/my.cnf" todir="/"/>
+    <exec executable="chkconfig">
+      <arg line="mysqld on"/>
+    </exec>
+    <exec executable="service">
+      <arg line="mysqld start"/>
+    </exec>
+    <exec executable="mysqladmin">
+      <arg line="-u root password iugonet"/>
+    </exec>
+    <exec executable="bash">
+      <arg value="-c"/>
+      <arg value="mysql -u root &lt; sql/init.sql"/>
+    </exec>
   </target>
 
   <target name="openmeetings" description="Install Open Meetings.">
