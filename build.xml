@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+x<?xml version="1.0" encoding="utf-8" ?>
 <project name="OpenMeetings" default="all" basedir="." xmlns:ac="antlib:net.sf.antcontlib">
   <property environment="env"/>
   <property file="build.properties"/>
@@ -307,20 +307,8 @@
   
   <target name="openmeetings" description="Install Open Meetings.">
     <get src="${src_openmeetings}" dest="${dst_openmeetings}" usetimestamp="yes"/>
-    <exec executable="tar" dir="${tmp}/">
-      <arg value="xvzf"/>
-      <arg value="${dst_openmeetings}"/>
-    </exec>
-    <!--
-    <exec executable="./configure" dir="${tmp}/${openmeetings_prefix}">
-    </exec>
-    <exec executable="make" dir="${tmp}/${openmeetings_prefix}">
-    </exec>
-    <exec executable="make" dir="${tmp}/${openmeetings_prefix}">
-      <arg value="install"/>
-    </exec>
-    -->
-    <move file="${tmp}/red5" todir="/usr/local/openmeetings"/>
+    <unzip src="${dst_openmeetings}" dest="${openmeetings_home}"/>
+    <move file="${openmeetings_home}/red5.jar" todir="/usr/local/openmeetings"/>
     <move file="etc" todir="/"/>
     <chmod file="/etc/rc.d/init.d/openmeetings" perm="+x"/>
     <exec executable="chkconfig">
