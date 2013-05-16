@@ -227,9 +227,9 @@
     <get src="${src_openmeetings}" dest="${dst_openmeetings}" usetimestamp="yes"/>
     <unzip src="${dst_openmeetings}" dest="${openmeetings_home}"/>
     <copy file="${openmeetings_home}/red5.jar" todir="/usr/local/openmeetings"/>
-    <copy todir="/">
+    <copy todir="/etc">
       <fileset dir="etc" >
-	<include name="**" />
+	<include name="**/*" />
       </fileset>
     </copy>
     <chmod file="/etc/rc.d/init.d/openmeetings" perm="+x"/>
