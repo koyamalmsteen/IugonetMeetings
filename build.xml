@@ -36,7 +36,9 @@
   </target>
 
   <target name="httpd_start" description="Start httpd" if="httpd.status">
-    <echo message="HOHOHOHOHO"/>
+    <exec executable="/etc/init.d/httpd">
+      <arg value="start" />
+    </exec>
   </target>
 
   <target name="httpd_stop" description="Stop httpd" unless="httpd.status">
