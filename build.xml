@@ -26,14 +26,10 @@
       <arg value="status"/>
     </exec>
     <condition property="httpd.status" value="true">
-      <equals arg1="${httpd}" arg2="httpd is stopped" />
+      <equals arg1="${httpd}" arg2="httpd は停止しています" />
     </condition>
     <!-- -->
     <antcall target="httpd_stop"/>
-
-    <exec executable="/etc/init.d/httpd">
-      <arg line="stop"/>
-    </exec>
     <exec executable="chkconfig">
       <arg line="httpd off"/>
     </exec>
@@ -44,7 +40,9 @@
   </target>
 
   <target name="httpd_stop" description="Stop httpd" unless="httpd.status">
-    <echo message="JOJOJO"/>
+    <exec executable="/etc/init.d/httpd">
+      <arg value="stop" />
+    </exec>
   </target>
 
   <target name="yum" description="Install packages by using yum">
